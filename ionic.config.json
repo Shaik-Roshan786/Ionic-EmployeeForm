@@ -1,0 +1,7 @@
+{
+  "name": "employee-form",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
