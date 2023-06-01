@@ -1,0 +1,52 @@
+<ion-header> <!--The translucent attribute is used to make the header transparent so that the content below it can be seen through it.-->  
+  <ion-toolbar> <!-- The ion-toolbar component is used to define a toolbar that contains the header content.-->
+    <ion-title class="heading"> Register Here</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-card-content   class="content"> <!--The fullscreen attribute is used to make the content area take up the full screen height.-->
+  <form [formGroup]="regForm" class="form ion-align-items-center bg-image"> <!-- The formGroup attribute is used to bind the form to a corresponding FormGroup object in the component code.-->
+  <ion-item>
+    <ion-label class="fname" position="floating">First Name</ion-label>
+    <ion-input type="text" formControlName="Firstname" placeholder="Enter Your Firstname"></ion-input> <!--  The formControlName attribute is used to bind the input field to a corresponding FormControl object in the component code.-->
+  </ion-item>
+  <br />
+  <ion-item>
+    <ion-label class="lname" position="floating">Last Name</ion-label>
+    <ion-input type="text" formControlName="Lastname" placeholder="Enter Your Lastname"></ion-input>
+  </ion-item>
+  <br />
+  <ion-item>
+    <ion-label class="email" position="floating">Email</ion-label>
+    <ion-input type="email" formControlName="Email" placeholder="Enter Your Email"></ion-input>
+  </ion-item>
+  <br />
+  <ion-item>
+    <ion-label class="mobile" position="floating">Mobile</ion-label>
+    <ion-input type="tel" formControlName="mobile" placeholder="Enter Your Mobile Number"></ion-input>
+  </ion-item>
+  <br />
+  <ion-item>
+    <ion-label class="company" position="floating">Company</ion-label>
+    <ion-input type="text" formControlName="Company" placeholder="Enter Your Company name"></ion-input>
+  </ion-item>
+  <br />
+  <ion-item>
+    <ion-label class="location" position="floating">Location</ion-label>
+    <ion-input type="text" formControlName="Location" placeholder="Enter Your Location"></ion-input>
+  </ion-item>
+  <br />
+  <ion-row>
+    <ion-col>
+      <ion-button expand="block" class="savebutton" (click)="show()">Save</ion-button>
+    </ion-col>
+   
+  </ion-row>
+  
+</form>
+  <ion-header collapse="condense"> <!-- The collapse attribute is set to "condense" to indicate that this header should only appear when the main header is scrolled out of view.-->
+    <ion-toolbar>
+      <ion-title size="large">employee</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-card-content>
